@@ -1,0 +1,143 @@
+#section-benefits {
+    padding-top: 85px;
+    padding-bottom: 115px;
+}
+
+.content-row {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+        
+    @media(min-width:768px) {
+        margin-bottom: 70px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &:last-child {
+            margin-bottom: 0;
+            flex-direction: row-reverse;
+        }
+    }
+
+    @media(min-width:1200px) {
+        margin-bottom: 150px;
+        flex-direction: row;
+        
+        &:last-child {
+            margin-bottom: 0;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.benefit-card {
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    max-width: 415px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+    @media(min-width:768px) {
+        max-width: 372px;
+    }
+
+    @media(min-width:1200px) {
+        width: 415px;
+        padding-top: 43px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+.benefit-card  .btn {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.benefit-card_message {
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 13px;
+    padding-right: 0px;
+    display: flex;
+    border: 1px solid #E3E8E9;
+    border-radius: 7px;
+}
+
+.benefit-card_message-img {
+    margin-right: 15px;
+}
+
+.benefit-card h4 {
+    margin-bottom: 3px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #181F48;
+
+    @media(min-width:1200px) {
+        font-size: 16px;
+    }
+}
+
+.benefit-card_message-text p {
+    font-weight: 400;
+    font-size: 10px;
+    color: #A5A9C0;
+
+    @media(min-width:1200px) {
+    font-size: 14px;
+    }
+}
+
+.benefit-desc {
+    text-align: center;
+
+    @media(min-width:768px) {
+        text-align: start;
+    }
+}
+
+.benefit-desc .section-trial_text {
+    max-width: 509px;
+    
+    @media(min-width:768px) {
+        max-width: 300px;
+    }
+
+    @media(min-width:1200px) {
+        max-width: 509px;
+    }
+}
+
+.benefit-card_message-user {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.benefit-card_message-user_img {
+    margin-right: 14px;
+}
+
+.benefit-card_message-user_name {
+    margin-right: 15px;
+}
+
+.benefit-card_message-user_link {
+    cursor: pointer;
+    transition: .5s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

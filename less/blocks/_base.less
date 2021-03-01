@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+html, body, h1, h2, h3, h4, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    z-index: 4;
+    display: none;
+}
+
+#overlay.active {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+    @media(min-width:768px) {
+        max-width: 738px;
+        padding: 0 24px;
+    }
+
+    @media(min-width:1200px) {
+        max-width: 1110px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+h1 {
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 747px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.21;
+    text-align: center;
+    color: #181F48;
+        
+    @media(min-width:768px) {
+        font-size: 44px;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 64px;
+    }
+}
+
+.btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 35px;
+    border: none;
+    background: #305DFB;
+    border-radius: 32px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .5s;
+    outline: none;
+    
+    &:hover {
+        opacity: 0.8;
+    }
+            
+    @media(min-width:768px) {
+
+    }
+
+    @media(min-width:1200px) {
+        height: 52px;
+        font-size: 16px;
+    }
+}
+
+.btn-light {
+    background: #FFFFFF;
+    color: #305DFB;
+}
+
+.btn-green {
+    background: #1FCA3E;
+}
+
+.btn-gray {
+    background: #c2c1c1;
+}
