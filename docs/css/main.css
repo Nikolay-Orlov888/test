@@ -130,7 +130,7 @@ h1 {
 }
 .header {
   padding-top: 24px;
-  background-image: url(../../img/header/header-bg.jpg);
+  background-image: url(../img/header/header-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -moz-background-size: cover;
